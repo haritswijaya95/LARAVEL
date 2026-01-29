@@ -9,6 +9,3 @@ route::post('/produk/store', [ProdukController::class, 'store'])->name('index.st
 route::get('/produk/edit{id}', [ProdukController::class, 'edit'])->name('index.edit');
 route::put('/produk/update{id}', [ProdukController::class, 'update'])->name('index.update');
 route::delete('/produk/delete{id}', [ProdukController::class, 'destroy'])->name('index.destroy');
-Route::get('/', function () {
-    return view('welcome');
-});
